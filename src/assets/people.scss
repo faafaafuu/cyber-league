@@ -1,0 +1,148 @@
+.peoples {
+    top: -40px;
+    position: relative;
+}
+
+.masha {
+    width: 19.2%;
+    margin-top: 18.3%;
+    z-index: 1001;
+    margin-left: 21.7%;
+}
+
+.roma {
+    width: 22.2%;
+    position: absolute;
+    margin-top: 19.3%;
+    z-index: 1001;
+    margin-left: 5.9%;
+}
+
+.info {
+    border-radius: 5px;
+    background-color: rgb(28, 7, 39);
+    opacity: 0.702;
+    box-shadow: 0px 0px 20.25px 6.75px rgba(255, 255, 255, 0.54);
+    position: absolute;
+    width: 13%;
+    height: 12%;
+    z-index: 1002;
+  }
+
+.info_m {
+    left: 18.2%;
+    top: 69%;
+}
+
+.info_r {
+    left: 42.9%;
+    top: 80%;
+}
+
+.head_name {
+    position: relative;
+    font-size: 1.1vw;
+    font-family: "GothamPro";
+    color: rgb(193, 112, 255);
+    text-align: left;
+    padding: 10px;
+    margin-left: 6%;
+    z-index: 1003;
+
+}
+
+  .description {
+    font-size: .9vw;
+    font-family: "GothamPro";
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 20px;
+    margin-top: -3px;
+    text-align: left;
+    z-index: 1003;
+}
+
+.terms {
+    width: 61%;
+    position: relative;
+    height: 58%;
+    margin: 0 auto;
+
+}
+
+  
+.terms .sign {
+    text-transform: uppercase;
+      font-size:  1.65vw;
+      text-align: center;
+      color: #c6e2ff;
+      animation: neon .08s ease-in-out infinite alternate;
+      position: absolute;
+      margin: 0 auto;
+      left: 35.7%;
+    }
+
+  
+  /*-- Animation Keyframes --*/
+  
+  
+  @keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+  }
+
+.terms h3 {
+        font-size: 30px;
+        font-family: "GothamPro";
+        color: rgb(238, 254, 255);
+        text-shadow: 0px 0px 63px rgba(87, 249, 255, 0.31);
+        z-index: 254;
+
+      
+}
+
+.term_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 96%;
+    top: 3%;
+    box-shadow: 0px 0px 26.25px 8.75px rgba(198, 87, 255, 0.35);
+}
+
+.tb_border {
+    height: 116%;
+    width: 106%;
+    position: absolute;
+    left: -3%;
+    top: -6%;
+}
+
+.term_description {
+        font-size: 1vw;
+        font-family: "Myriad Pro";
+        color: rgb(224, 230, 226);
+        line-height: 1.2;
+        text-align: left;
+        z-index: 1003;
+        padding: 10%;
+        position: relative;
+      
+}

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 1080px;
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    overflow-y:none;
+}
+
+.bg_dark {
+    background: linear-gradient(#240733, rgba(0, 0, 0, 0));
+    opacity: 0.512; 
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    min-width: 1080px;
+  }
+
+.ll_bg {
+    top: 0;
+    background-image: url("../../img/ll_bg.png") no-repeat;
+    width: 100%;
+    background-size: 100%;
+    position: absolute;
+    z-index: 90;
+    min-width: 1080px;
+    height: auto;
+}
+
+.bg {
+    top: 12vh;
+    position: relative;
+    min-width: 1080px;
+    width: 100%;
+    height: auto;
+}
+/*
+.img-fluid {
+    width: 100%;
+    height: auto;
+    min-width: 1080px;
+}
+*/
+.block2_bg {
+    opacity: .3;
+    min-width: 1080px;
+    width: 100%;
+}
+
+.block2_bg_dark {
+    top: 2vh;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    background-color: rgb(28, 7, 39);   
+    min-width: 1080px;
+    height: auto;
+    min-width: 1080px;
+}
+
+.block3_bg {
+    top: 2vh;
+    min-width: 1080px;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+

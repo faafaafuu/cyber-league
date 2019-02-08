@@ -1,0 +1,1246 @@
+.ellipse {
+    width: 51%;
+    position: absolute;
+    top: 2.4%;
+    z-index: 1001;
+    left: 25.5%;
+}
+
+.games_wheel {
+    width: 428px;
+    height: 427px;
+    border-radius: 50%;
+    position: relative;
+    top: 169px;
+    left: -18px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid rgb(223, 61, 61);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px, rgba(0, 0, 0, 0.05) 0px 3px 0px;
+    transform: rotate(0deg);
+}
+
+  
+  .games_wheel div.sec0 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 417px 172px 0;
+    border-color: rgb(0, 187, 255) transparent;
+    left: 138px;
+    top: -182px;
+    opacity: .3;
+    z-index: 1001;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(22deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(60deg);
+    border-color: red transparent;
+  }
+  
+  .games_wheel div.sec1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 290px 275px 0;
+    border-color: green transparent;
+    transform-origin: 49px 131px;
+    left: 333px;
+    top: -140px;
+    opacity: .3;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(87.8deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(60deg);
+    border-color: green transparent;
+    z-index: 1001;
+  }
+
+  .games_wheel div.sec2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 417px 172px 0;
+    border-color: rgb(0, 187, 255) transparent;
+    top: -180px;
+    left: -23px;
+    opacity: .3;
+    z-index: 1001;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(-23deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(60deg);
+    border-color: yellow transparent;
+  }
+
+
+  .games_wheel div.sec3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 417px 172px 0;
+    border-color: rgb(0, 187, 255) transparent;
+    top: -63px;
+    left: -136px;
+    opacity: .3;
+    z-index: 1001;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(-68deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(60deg);
+    border-color: blue transparent;
+  }
+
+  .games_wheel div.sec4 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 417px 172px 0;
+    border-color: rgb(0, 187, 255) transparent;
+    top: 96px;
+    left: -135px;
+    opacity: .3;
+    z-index: 1001;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(-113deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(60deg);
+    border-color: orange transparent;
+  }
+
+  .games_wheel div.sec5 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 417px 172px 0;
+    border-color: rgb(0, 187, 255) transparent;
+    top: 207px;
+    left: -19px;
+    opacity: .3;
+    z-index: 1001;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(-158deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(60deg);
+    border-color: violet transparent;
+  }
+
+  .games_wheel div.sec6 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 384px 169px 0;
+    border-color: rgb(0, 187, 255) transparent;
+    top: 205px;
+    left: 141px;
+    opacity: .3;
+    z-index: 1001;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(-204deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(60deg);
+    border-color: rgb(49, 184, 202) transparent;
+  }
+//   /*WRAPPER*/
+ 
+
+a {
+  text-decoration: none;
+}
+
+
+/* ---- particles.js container ---- */
+
+
+.wrapper1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  margin-top: -300px;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.wrapper.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+  -ms-transform: translateY(85px);
+  transform: translateY(85px);
+}
+
+.container {
+  margin: 0 auto;
+  height: 600px;
+  text-align: center;
+  left: -13px;
+  position: relative;
+  top: 2px;
+}
+
+
+
+
+.wheel-string {
+  z-index: -1;
+  background-color: orange;
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+}
+
+.wheel-string-one {
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 50%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.wheel-string-two {
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 50%;
+  -webkit-transform: rotate(-18deg);
+  -moz-transform: rotate(-18deg);
+  -o-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
+  transform: rotate(-18deg);
+}
+
+.wheel-string-three {
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 50%;
+  -webkit-transform: rotate(54deg);
+  -moz-transform: rotate(54deg);
+  -o-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+
+.wheel-string-four {
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 50%;
+  -webkit-transform: rotate(126deg);
+  -moz-transform: rotate(126deg);
+  -o-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+
+.wheel-string-five {
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 50%;
+  -webkit-transform: rotate(198deg);
+  -moz-transform: rotate(126deg);
+  -o-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  transform: rotate(198deg);
+}
+
+.wheel-wrapper {
+  background-color: none;
+
+width: 420px;
+
+height: 420px;
+
+position: relative;
+
+margin: auto auto;
+
+overflow: hidden;
+
+transition: transform 0.4s ease;
+
+border-radius: 50%;
+
+top: 73px;
+
+left: -18px;
+}
+
+@-webkit-keyframes wheel-rotate {
+  from {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+    -moz-transform: rotate(0deg) translate(-50%, -50%);
+    -o-transform: rotate(0deg) translate(-50%, -50%);
+    -ms-transform: rotate(0deg) translate(-50%, -50%);
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+    -moz-transform: rotate(360deg) translate(-50%, -50%);
+    -o-transform: rotate(360deg) translate(-50%, -50%);
+    -ms-transform: rotate(360deg) translate(-50%, -50%);
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@-moz-keyframes wheel-rotate {
+  from {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+    -moz-transform: rotate(0deg) translate(-50%, -50%);
+    -o-transform: rotate(0deg) translate(-50%, -50%);
+    -ms-transform: rotate(0deg) translate(-50%, -50%);
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+    -moz-transform: rotate(360deg) translate(-50%, -50%);
+    -o-transform: rotate(360deg) translate(-50%, -50%);
+    -ms-transform: rotate(360deg) translate(-50%, -50%);
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@-o-keyframes wheel-rotate {
+  from {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+    -moz-transform: rotate(0deg) translate(-50%, -50%);
+    -o-transform: rotate(0deg) translate(-50%, -50%);
+    -ms-transform: rotate(0deg) translate(-50%, -50%);
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+    -moz-transform: rotate(360deg) translate(-50%, -50%);
+    -o-transform: rotate(360deg) translate(-50%, -50%);
+    -ms-transform: rotate(360deg) translate(-50%, -50%);
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes wheel-rotate {
+  from {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+    -moz-transform: rotate(0deg) translate(-50%, -50%);
+    -o-transform: rotate(0deg) translate(-50%, -50%);
+    -ms-transform: rotate(0deg) translate(-50%, -50%);
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+    -moz-transform: rotate(360deg) translate(-50%, -50%);
+    -o-transform: rotate(360deg) translate(-50%, -50%);
+    -ms-transform: rotate(360deg) translate(-50%, -50%);
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes icon-rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes icon-rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes icon-rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes icon-rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.wheel-wrapper.last {
+  margin-right: 0;
+}
+
+.wheel-wrapper .wheel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.primary .wheel-icon,
+.wheel-wrapper .wheel.secondary .wheel-icon-inner {
+  text-align: center;
+  font-weight: bold;
+  cursor: default;
+  -webkit-border-radius: 100%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 100%;
+  -moz-background-clip: padding;
+  border-radius: 100%;
+  background-clip: padding-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-stroke: 0.01em;
+}
+
+.wheel-wrapper .wheel.primary {
+  width: 180px;
+  height: 180px;
+}
+
+.wheel-wrapper .wheel.primary .wheel-icon {
+  width: 180px;
+  height: 180px;
+  font-size: 16pt;
+  color: #d6d6d6;
+  background-color: #aa73ff;
+  line-height: 180px;
+}
+
+.wheel-wrapper .wheel.secondary {
+  z-index: 0;
+  width: 340px;
+  height: 340px;
+  -webkit-animation: wheel-rotate 8s linear infinite;
+  -moz-animation: wheel-rotate 8s linear infinite;
+  -o-animation: wheel-rotate 8s linear infinite;
+  -ms-animation: wheel-rotate 8s linear infinite;
+  animation: wheel-rotate 8s linear infinite;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  -ms-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.wheel-wrapper .wheel.secondary.border {
+  border: 1px solid #c6bc8d;
+  -webkit-border-radius: 100%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 100%;
+  -moz-background-clip: padding;
+  border-radius: 100%;
+  background-clip: padding-box;
+}
+
+.wheel-wrapper .wheel.secondary .wheel-spoke,
+.wheel-wrapper .wheel.secondary .wheel-icon,
+.wheel-wrapper .wheel.secondary .wheel-icon-inner {
+  width: 150px;
+  height: 150px;
+}
+
+.wheel-wrapper .wheel.secondary .wheel-spoke {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 170px;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+.wheel-wrapper .wheel.secondary .wheel-icon {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  -ms-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.wheel-wrapper .wheel.secondary .wheel-icon-inner {
+  font-size: 14pt;
+  color: white;
+  background-color: #33b1f8;
+  line-height: 150px;
+}
+
+.wheel-wrapper .wheel.secondary:hover,
+.wheel-wrapper .wheel.primary:hover {
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important;
+  -ms-animation-play-state: paused !important;
+  animation-play-state: paused !important;
+}
+
+.wheel-wrapper .wheel.secondary:hover .wheel-icon,
+.wheel-wrapper .wheel.primary:hover .wheel-icon {
+  -webkit-animation-play-state: paused !important;
+  -moz-animation-play-state: paused !important;
+  -o-animation-play-state: paused !important;
+  -ms-animation-play-state: paused !important;
+  animation-play-state: paused !important;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(6) {
+  display: block;
+  -webkit-transform: rotate(300deg) translate(-50%, -50%);
+  -moz-transform: rotate(300deg) translate(-50%, -50%);
+  -o-transform: rotate(300deg) translate(-50%, -50%);
+  -ms-transform: rotate(300deg) translate(-50%, -50%);
+  transform: rotate(300deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(6) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(6) .wheel-icon-inner {
+  -webkit-transform: rotate(-300deg);
+  -moz-transform: rotate(-300deg);
+  -o-transform: rotate(-300deg);
+  -ms-transform: rotate(-300deg);
+  transform: rotate(-300deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(5) {
+  display: block;
+  -webkit-transform: rotate(240deg) translate(-50%, -50%);
+  -moz-transform: rotate(240deg) translate(-50%, -50%);
+  -o-transform: rotate(240deg) translate(-50%, -50%);
+  -ms-transform: rotate(240deg) translate(-50%, -50%);
+  transform: rotate(240deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(5) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(5) .wheel-icon-inner {
+  -webkit-transform: rotate(-240deg);
+  -moz-transform: rotate(-240deg);
+  -o-transform: rotate(-240deg);
+  -ms-transform: rotate(-240deg);
+  transform: rotate(-240deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(4) {
+  display: block;
+  -webkit-transform: rotate(180deg) translate(-50%, -50%);
+  -moz-transform: rotate(180deg) translate(-50%, -50%);
+  -o-transform: rotate(180deg) translate(-50%, -50%);
+  -ms-transform: rotate(180deg) translate(-50%, -50%);
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(4) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(4) .wheel-icon-inner {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(3) {
+  display: block;
+  -webkit-transform: rotate(120deg) translate(-50%, -50%);
+  -moz-transform: rotate(120deg) translate(-50%, -50%);
+  -o-transform: rotate(120deg) translate(-50%, -50%);
+  -ms-transform: rotate(120deg) translate(-50%, -50%);
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(3) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(3) .wheel-icon-inner {
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(2) {
+  display: block;
+  -webkit-transform: rotate(60deg) translate(-50%, -50%);
+  -moz-transform: rotate(60deg) translate(-50%, -50%);
+  -o-transform: rotate(60deg) translate(-50%, -50%);
+  -ms-transform: rotate(60deg) translate(-50%, -50%);
+  transform: rotate(60deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(2) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(2) .wheel-icon-inner {
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(1) {
+  display: block;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -moz-transform: rotate(0deg) translate(-50%, -50%);
+  -o-transform: rotate(0deg) translate(-50%, -50%);
+  -ms-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(1) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(1) .wheel-icon-inner {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(5) {
+  display: block;
+  -webkit-transform: rotate(288deg) translate(-50%, -50%);
+  -moz-transform: rotate(288deg) translate(-50%, -50%);
+  -o-transform: rotate(288deg) translate(-50%, -50%);
+  -ms-transform: rotate(288deg) translate(-50%, -50%);
+  transform: rotate(288deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(5) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(5) .wheel-icon-inner {
+  -webkit-transform: rotate(-288deg);
+  -moz-transform: rotate(-288deg);
+  -o-transform: rotate(-288deg);
+  -ms-transform: rotate(-288deg);
+  transform: rotate(-288deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(4) {
+  display: block;
+  -webkit-transform: rotate(216deg) translate(-50%, -50%);
+  -moz-transform: rotate(216deg) translate(-50%, -50%);
+  -o-transform: rotate(216deg) translate(-50%, -50%);
+  -ms-transform: rotate(216deg) translate(-50%, -50%);
+  transform: rotate(216deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(4) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(4) .wheel-icon-inner {
+  -webkit-transform: rotate(-216deg);
+  -moz-transform: rotate(-216deg);
+  -o-transform: rotate(-216deg);
+  -ms-transform: rotate(-216deg);
+  transform: rotate(-216deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(3) {
+  display: block;
+  -webkit-transform: rotate(144deg) translate(-50%, -50%);
+  -moz-transform: rotate(144deg) translate(-50%, -50%);
+  -o-transform: rotate(144deg) translate(-50%, -50%);
+  -ms-transform: rotate(144deg) translate(-50%, -50%);
+  transform: rotate(144deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(3) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(3) .wheel-icon-inner {
+  -webkit-transform: rotate(-144deg);
+  -moz-transform: rotate(-144deg);
+  -o-transform: rotate(-144deg);
+  -ms-transform: rotate(-144deg);
+  transform: rotate(-144deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(2) {
+  display: block;
+  -webkit-transform: rotate(72deg) translate(-50%, -50%);
+  -moz-transform: rotate(72deg) translate(-50%, -50%);
+  -o-transform: rotate(72deg) translate(-50%, -50%);
+  -ms-transform: rotate(72deg) translate(-50%, -50%);
+  transform: rotate(72deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(2) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(2) .wheel-icon-inner {
+  -webkit-transform: rotate(-72deg);
+  -moz-transform: rotate(-72deg);
+  -o-transform: rotate(-72deg);
+  -ms-transform: rotate(-72deg);
+  transform: rotate(-72deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(1) {
+  display: block;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -moz-transform: rotate(0deg) translate(-50%, -50%);
+  -o-transform: rotate(0deg) translate(-50%, -50%);
+  -ms-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(1) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(1) .wheel-icon-inner {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(4) {
+  display: block;
+  -webkit-transform: rotate(270deg) translate(-50%, -50%);
+  -moz-transform: rotate(270deg) translate(-50%, -50%);
+  -o-transform: rotate(270deg) translate(-50%, -50%);
+  -ms-transform: rotate(270deg) translate(-50%, -50%);
+  transform: rotate(270deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(4) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(4) .wheel-icon-inner {
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(3) {
+  display: block;
+  -webkit-transform: rotate(180deg) translate(-50%, -50%);
+  -moz-transform: rotate(180deg) translate(-50%, -50%);
+  -o-transform: rotate(180deg) translate(-50%, -50%);
+  -ms-transform: rotate(180deg) translate(-50%, -50%);
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(3) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(3) .wheel-icon-inner {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(2) {
+  display: block;
+  -webkit-transform: rotate(90deg) translate(-50%, -50%);
+  -moz-transform: rotate(90deg) translate(-50%, -50%);
+  -o-transform: rotate(90deg) translate(-50%, -50%);
+  -ms-transform: rotate(90deg) translate(-50%, -50%);
+  transform: rotate(90deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(2) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(2) .wheel-icon-inner {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(1) {
+  display: block;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -moz-transform: rotate(0deg) translate(-50%, -50%);
+  -o-transform: rotate(0deg) translate(-50%, -50%);
+  -ms-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(1) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(1) .wheel-icon-inner {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(3) {
+  display: block;
+  -webkit-transform: rotate(240deg) translate(-50%, -50%);
+  -moz-transform: rotate(240deg) translate(-50%, -50%);
+  -o-transform: rotate(240deg) translate(-50%, -50%);
+  -ms-transform: rotate(240deg) translate(-50%, -50%);
+  transform: rotate(240deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(3) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(3) .wheel-icon-inner {
+  -webkit-transform: rotate(-240deg);
+  -moz-transform: rotate(-240deg);
+  -o-transform: rotate(-240deg);
+  -ms-transform: rotate(-240deg);
+  transform: rotate(-240deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(2) {
+  display: block;
+  -webkit-transform: rotate(120deg) translate(-50%, -50%);
+  -moz-transform: rotate(120deg) translate(-50%, -50%);
+  -o-transform: rotate(120deg) translate(-50%, -50%);
+  -ms-transform: rotate(120deg) translate(-50%, -50%);
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(2) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(2) .wheel-icon-inner {
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(1) {
+  display: block;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -moz-transform: rotate(0deg) translate(-50%, -50%);
+  -o-transform: rotate(0deg) translate(-50%, -50%);
+  -ms-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(1) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(1) .wheel-icon-inner {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(2) {
+  display: block;
+  -webkit-transform: rotate(180deg) translate(-50%, -50%);
+  -moz-transform: rotate(180deg) translate(-50%, -50%);
+  -o-transform: rotate(180deg) translate(-50%, -50%);
+  -ms-transform: rotate(180deg) translate(-50%, -50%);
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(2) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(2) .wheel-icon-inner {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(1) {
+  display: block;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -moz-transform: rotate(0deg) translate(-50%, -50%);
+  -o-transform: rotate(0deg) translate(-50%, -50%);
+  -ms-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(1) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(1) .wheel-icon-inner {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-1 .wheel-spoke:nth-child(1) {
+  display: block;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -moz-transform: rotate(0deg) translate(-50%, -50%);
+  -o-transform: rotate(0deg) translate(-50%, -50%);
+  -ms-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-1 .wheel-spoke:nth-child(1) .wheel-icon {
+  -webkit-animation: icon-rotate 8s linear infinite;
+  -moz-animation: icon-rotate 8s linear infinite;
+  -o-animation: icon-rotate 8s linear infinite;
+  -ms-animation: icon-rotate 8s linear infinite;
+  animation: icon-rotate 8s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-1 .wheel-spoke:nth-child(1) .wheel-icon-inner {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wheel-wrapper:hover .wheel.secondary .wheel-spoke,
+.wheel-wrapper.no-hover .wheel.secondary .wheel-spoke {
+  top: -55px;
+  opacity: 1;
+  -webkit-transform-origin: 0 225px;
+  -moz-transform-origin: 0 225px;
+  -o-transform-origin: 0 225px;
+  -ms-transform-origin: 0 225px;
+  transform-origin: 0 225px;
+}
+
+/*  */
+
+
+
+ul,li,p {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+
+.menu {
+	position: absolute;
+	display: block;
+	width: 400px;
+	height: 400px;
+	top: 50px;
+	left: 200px;
+	overflow: hidden;
+	border-radius: 200px;
+	transform-origin: 50% 50%;
+	transition: transform .2s;
+}
+.menu:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -45px 0 0 -45px;
+	border-radius: 50%;
+  box-sizing: border-box;
+  
+  background-color: rgb(236, 27, 51);
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  z-index: 969;
+
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    box-shadow: 10px 0px 36.12px 6.88px rgba(154, 79, 214, 0.89);
+    position: absolute;
+    z-index: 970;
+  
+}
+
+.menu .item {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	bottom: 50%;
+	left: 50%;
+	transform-origin: 0% 100%;
+	overflow: hidden;
+}
+.menu .item-inner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background-color: #666;
+	transform-origin: 0% 100%;
+	border: 3px solid #333;
+	display: flex;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 0;
+	color: #ccc;
+}
+
+
+@keyframes rotate-full {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
+
+
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated .infinite {
+  animation-iteration-count: infinite;
+}
+
+.box1 {
+  width: 25rem;
+  height: 25rem;
+  margin: 5rem auto;
+  border-radius: 100%;
+  transform: rotate(0deg);
+  top: 0px;
+  left: 185px;
+}
+
+
+.rotate-full {
+  animation: infinite-spinning 18s infinite linear;
+}
+
+@keyframes circle {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+
+@keyframes inner-circle {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(-360deg); }
+}
+
+
+
+
+
+
