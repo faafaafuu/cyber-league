@@ -9,7 +9,7 @@
 	<title>Alfaleads</title>
 </head>
 <body style="visibility: hidden"onload="setTimeout ('document.body.style.visibility = \'visible\'', 0)">
-<div class="main_page">
+<div class="main_page active_page">
 	<section class="header">
 			<!-- header -->
 		<div class="header_logo_wrapp">
@@ -21,7 +21,7 @@
 			<a class="header_logo_title" href="#1">Киберспортивная </br> лига арбитражников</a>
 		</div>
 		<div class="navbar">
-			<a class="news">Новости</a>
+			<a class="header_news">Новости</a>
 			<a class="table_nav" href="#grid">Расписание/сетка</a>
 		</div>
 		<div class="streaming_wrap">
@@ -35,8 +35,8 @@
 	<!-- bg -->
 	<section>
 		<div class="bg_dark" id="1"></div>
-		<img src="./img/ll_bg.png" class="ll_bg img-fluid" alt="">
-		<img src="./img/bg.png" class="bg img-fluid" alt="">
+		<img src="./img/ll_bg.png" class="ll_bg ll_blur img-fluid" alt="">
+		<img src="./img/bg.png" class="bg bg_blur img-fluid" alt="">
 	</section>
 	<!-- bg -->
 	<section class="block1">
@@ -116,7 +116,7 @@
 			<section class="grid">
 				<div class="header header_block2">
 					<div class="navbar">
-						<a class="news active_nav">Расписание</a>
+						<a class="header_news active_nav">Расписание</a>
 						<a class="table_nav">Cетка</a>
 					</div>
 				</div>
@@ -192,8 +192,51 @@
 					<div class="header"></div>
 				</section> -->
 	</section>
+	<section class="sign_up_form">
+		<form class="sign_up">
+		<div class="form-group">
+			<h2>Вход</h2>
+			<label for="exampleInputEmail1">Ник</label></br>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Пароль</label></br>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</div>
+		<div class="form-group form-check">
+			<a class="form-check-label" for="exampleCheck1">Забыли пароль?</a>
+		</div>
+		<button type="submit" class="btn btn-primary">Войти</button>
+		<button type="submit" class="reg-btn btn-primary">Регистрация</button>
+		</form>
+		<div class="sign_up_bg">
+			<!-- TEST 1 -->
+			<div class="firstBlur">
+		<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+		</button> -->
+	  
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" data-backdrop="true" data-keyboard="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">Modal Body</div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+			</div>
+		</div>
+	</section>
 </div>
-<div class="news active_page">
+<div class="news">
 	<div class="news_bg_wrapper">
 	<section class="header">
 		<!-- header -->
@@ -289,6 +332,7 @@
 				</div>
 			</div>
 	</section>
+	<!-- modal -->
 	<section>
 		<div class="modal" id="modal-name">
 		<div class="modal-sandbox"></div>
@@ -311,6 +355,7 @@
 		</div>
 		</div>
 	</section>
+	<!-- modal -->
 	<section class="nb-footer">
 			<ul class="nb-icons">
 				<li>

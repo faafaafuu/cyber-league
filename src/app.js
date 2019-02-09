@@ -1,3 +1,4 @@
+import './assets/sign_up_form.scss'
 import './assets/block1.scss';
 import './assets/block2.scss';
 import './assets/block3.scss';
@@ -37,3 +38,19 @@ document.addEventListener('click', (e) => {
         return modal.style.display = 'none';
     }
 })
+
+// sign up modal
+(function(){
+    //Show Modal
+   $('#exampleModalLong').on('show.bs.modal', function (e) {
+     console.log('show');
+     $('.firstBlur').addClass('modalBlur');
+   })
+   
+   //Remove modal
+   $('#exampleModalLong').on('hide.bs.modal', function (e) {
+      console.log('hide');
+     $('.firstBlur').removeClass('modalBlur');
+   })
+ })();
+ 
