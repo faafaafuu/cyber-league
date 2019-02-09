@@ -46,7 +46,6 @@ and (orientation : portrait) {
         }
 }
 
-/* Desktops and laptops ----------- */
 @media only screen 
 and (max-width : 1224px) {
     .terms {
@@ -55,6 +54,56 @@ and (max-width : 1224px) {
 }
 // and (min-width : 1224px) 
 /* Styles */
+
+@media only screen 
+and (max-width : 1324px) {
+    .news_content_wrap {
+        width: 54%;
+        top: 200px;
+        position: relative;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+@media only screen 
+and (min-width : 1470px) {
+    .news_content_wrap {
+        width: 54% !important;
+    }
+}
+
+@media only screen 
+and (max-width : 1324px) {
+    div.card {
+        height: 23rem !important;
+        margin-top: 3% !important;
+    }
+}
+
+
+@media only screen 
+and (max-width : 1298px) {
+    div.card {
+        width: 14rem !important;
+    }
+}
+
+@media only screen 
+and (max-width: 1145px) {
+    div.card {
+        width: 13rem !important;
+        height: 350px !important;
+    }
+    .card-img-top {
+        height: 80%;
+    }
+}
+
 
 
 /* Large screens ----------- */

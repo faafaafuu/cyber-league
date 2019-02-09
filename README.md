@@ -3,3 +3,5 @@ to fix:
 - fonts 
 - b1 descriptions
 - smoth nav transition 
+- footer p (news)
+- news fn bg

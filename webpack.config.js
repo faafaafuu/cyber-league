@@ -20,6 +20,7 @@ let conf = {
         // по умолчанию нормально работает с js и json
         rules: [
             {   // скармливаю эти файлы
+
                 test: /\.js$/,
                 loader: 'babel-loader',
                 // выдергивать из node_modules
@@ -29,7 +30,8 @@ let conf = {
                 test: /\.scss$/,
                 use: [
                     'style-loader',
-                    'css-loader'
+                    'css-loader',
+                    'sass-loader',
                 ]
                 // use: ExtractTextPlugin.extract({
                 //     fallback: 'style-loader',
