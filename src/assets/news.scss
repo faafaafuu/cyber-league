@@ -1,4 +1,4 @@
-.news {
+.news_page {
     display: none;
 }
 
@@ -22,6 +22,15 @@ section .nb-footer {
     height: 10%;
     bottom: 0%;
     position: absolute;
+}
+
+
+.active_nav {
+    color: #c170ff !important;
+    display: table;
+    border-bottom: 3px solid  #c170ff;
+    line-height: 37px;
+    margin-top: 5px;
 }
 
 .news_content {

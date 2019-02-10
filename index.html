@@ -4,7 +4,7 @@
 	<meta charset="UTF0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<title>Alfaleads</title>
 </head>
@@ -21,7 +21,7 @@
 			<a class="header_logo_title" href="#1">Киберспортивная </br> лига арбитражников</a>
 		</div>
 		<div class="navbar">
-			<a class="header_news">Новости</a>
+			<a class="header_news" href="#news_page">Новости</a>
 			<a class="table_nav" href="#grid">Расписание/сетка</a>
 		</div>
 		<div class="streaming_wrap">
@@ -43,7 +43,42 @@
 		<div class="block1_logo_wrapper">
 			<img src="./img/main_logo.png" class="kla_logo img-fluid" alt="">
 			<img src="./img/ll_logo.png" class="game_logo img-fluid" alt="">
-			<img src="./img/wheel.png" alt="" class="ellipse img-fluid">
+			<div class="rol_wel">
+
+			</div>
+			<div class="test">
+					<!-- <img src="./img/wheel.png" alt="" class="ellipse img-fluid"> -->
+			<div class="roulette">
+				<div class="menu-wrap">
+					<span class="enter"><p>Вход</p></span>
+					<div class="choose_box"></div>
+					<ul class="menu box1 animated infinite rotate-full">
+						<li class="item">
+							<a class="item-inner" href="#item1"><img class="rs r1" src="./img/wheelPic/Cs.jpg" alt=""></a>
+						</li>
+						<li class="item">
+							<a class="item-inner" href="#item2"><img class="rs r2" src="./img/wheelPic/Dota.png" alt=""></a>
+						</li>
+						<li class="item">
+							<a class="item-inner" href="#item3"><img class="rs r3" src="./img/wheelPic/Ll.jpg" alt=""></a>
+						</li>
+						<li class="item">
+							<a class="item-inner" href="#item4"><img class="rs r4" src="./img/wheelPic/Pubg.jpg" alt=""></a>
+						</li>
+						<li class="item">
+							<a class="item-inner" href="#item5"><img class="rs r5" src="./img/wheelPic/Maffia.jpg" alt=""></a>
+						</li>
+						<li class="item">
+							<a class="item-inner" href="#item6"><img class="rs r6" src="./img/wheelPic/Warcraft.jpg" alt=""></a>
+						</li>
+						<li class="item">
+							<a class="item-inner" href="#item7"><img class="rs r7" src="./img/wheelPic/Overwatch.jpg" alt=""></a>
+						</li>
+					</ul>
+				</div>     
+			</div>	
+			</div>
+			<!-- </img> -->
 			<div class="peoples">
 					<img src="./img/masha1.png" alt="" class="masha img-fluid">
 					<div class="info info_m">
@@ -71,44 +106,7 @@
 					</img>
 			</div>
 		</div>
-		<div class="roulette">
-			
-		<!-- <div class="ellipse">
-			<div class="wrapper1">
-			<div class="container">
-				<div class="wrapper">
-				<div class="container">
-					<div class="menu-wrap">
-							<ul class="menu box1 animated infinite rotate-full">
-								<li class="item">
-									<a class="item-inner s" href="#item1"><img src="./img/Cs.png" alt=""></a>
-								</li>
-								<li class="item">
-									<a class="item-inner" s href="#item2"><img src="./img/Dota.png" alt=""></a>
-								</li>
-								<li class="item">
-									<a class="item-inner s" href="#item3"><img src="./img/Ll.png" alt=""></a>
-								</li>
-								<li class="item">
-									<a class="item-inner s" href="#item4"><img src="./img/Pubg.png" alt=""></a>
-								</li>
-								<li class="item">
-									<a class="item-inner s" href="#item5"><img src="./img/Maffia.png" alt=""></a>
-								</li>
-								<li class="item">
-									<a class="item-inner s" href="#item6"><img src="./img/Warcraft.png" alt=""></a>
-								</li>
-								<li class="item">
-									<a class="item-inner s" href="#item7"><img src="./img/Overwatch.png" alt=""></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
-			</div> -->
-		</div>
+		
 	</section>
 	<section class="block2" id="grid">
 		<div class="block2_bg_dark">
@@ -173,7 +171,9 @@
 			<div class="vk">
 			<p>VK обсудим?</p>
 			</div>
-			<div class="video_wrap"></div>
+			<div class="video_wrap">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZKFwQFBwQFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 			<footer>
 				<ul class="icons">
 					<li>
@@ -235,8 +235,56 @@
 			</div>
 		</div>
 	</section>
+	<section class="reg_form">
+		<h1>Регистрация</h1>
+		<div class="reg_container_input">
+			<div>
+			<label for="">Имя</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			<label for="">Фамилия</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			<label for="">Ник</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			<label for="">E-mail</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			</div>
+			<div>
+			<label for="">VK</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			<label for="">Telegram</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			<label for="">Пароль</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			<label for="">Повторите пароль</label></br>
+			<input type="" class="reg-form-control" id="" placeholder="">
+			</div>
+			<button type="submit" class="main-reg-btn btn-primary">Отправить заявку</button>
+		</div>
+		<div class="reg_container_checkbox">
+			<div class="who_r_u">
+			<label for=""></label></br>
+			<input type="checkbox" name="" value="арбитражник">
+			<input type="checkbox" name="" value="smm">
+			<input type="checkbox" name="" value="веб-мастер">
+			<input type="checkbox" name="" value="другое">
+			<input type="" class="reg-form-control" id="" placeholder="">
+			</div>
+			<div class="whats_ur_game">
+			<label for=""></label></br>
+			<input type="checkbox" name="" value=" League of Legends">League of Legends
+			<input type="checkbox" name="" value="Dota">Dota
+			<input type="checkbox" name="" value="Counter-Strike">Counter-Strike
+			<input type="checkbox" name="" value="PUBG">PUBG
+			<input type="checkbox" name="" value="Mafia">Mafia
+			<input type="checkbox" name="" value="Warcraft">Warcraft
+			<input type="checkbox" name="" value="Overwatch">Overwatch
+			<input type="checkbox" name="" value="Другое">
+			<input type="" class="reg-form-control" id="" placeholder="">
+			</div>
+		</div>
+	</section>
 </div>
-<div class="news">
+<div class="news_page" id="news_page">
 	<div class="news_bg_wrapper">
 	<section class="header">
 		<!-- header -->
@@ -249,7 +297,7 @@
 			<a class="header_logo_title" href="#1">Киберспортивная </br> лига арбитражников</a>
 		</div>
 		<div class="navbar">
-			<a class="news">Новости</a>
+			<a class="header_news" id="#news_page">Новости</a>
 			<a class="table_nav" href="#grid">Расписание/сетка</a>
 		</div>
 		<div class="streaming_wrap">
@@ -374,8 +422,19 @@
 </div>
 </div>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="dist/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="preload" href="dist/style.css">
+<script>
+$(function(){
+    $menuWrap = $('.menu-wrap');
+    $menuItem = $('.menu').find('.item');
+    
+    itemDeg = 360 / $menuItem.length;
+    $menuItem.each(function(r){
+        $(this).css('transform', 'rotate(' + ( itemDeg / 2 - itemDeg * r ) + 'deg) skew(' + ( - 90 + itemDeg ) + 'deg)');
+        $(this).children('.item-inner').css('transform', 'skew(' + ( 90 - itemDeg ) + 'deg)');
+    });
+});
+</script>
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->

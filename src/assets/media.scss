@@ -94,6 +94,29 @@ and (max-width : 1298px) {
 }
 
 @media only screen 
+and (min-width : 1508px) {
+    .test {
+        top: 26%;
+    }
+}
+
+@media only screen 
+and (max-width : 1508px) {
+    .test {
+        top: 12%;
+    }
+}
+
+@media only screen 
+and (max-width : 1228px) {
+    .test {
+        top: -1%;
+    }
+}
+
+
+
+@media only screen 
 and (max-width: 1145px) {
     div.card {
         width: 13rem !important;

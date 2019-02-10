@@ -8,49 +8,55 @@ import './assets/wheel.scss';
 import './assets/media.scss';
 import './assets/modal.scss';
 import './assets/news.scss';
+import './assets/reg.scss';
 // import './assets/md.sass';
 
 
-const news = document.querySelector('.news');
+const news = document.querySelector('.header_news');
 const table_grid = document.querySelector('.table_nav');
 const modal = document.querySelector('.modal')
+const main_page = document.querySelector('.main_page');
+const news_page = document.querySelector('.news_page')
 
 
 //active на кнопки хэдэра
 document.addEventListener('click', (e) => {
-    console.log(e.target)
     if(e.target.textContent == 'Новости') {
         table_grid.classList.remove('active_nav')
-        return news.classList.add('active_nav')
+        news.classList.add('active_nav')
+        main_page.classList.remove('active_page')
+        return news_page.classList.add('active_page')
     }
     if(e.target.textContent == 'Расписание/сетка') {
         news.classList.remove('active_nav')
-        return table_grid.classList.add('active_nav')
-    }
+        table_grid.classList.add('active_nav')
+        news_page.classList.remove('active_page')
+        return main_page.classList.add('active_page')
 
-    let etc = e.target.className;
-
-    if(etc == "card-img-top" || etc == "card-body" || etc == "card-text" || etc == "card-date") {
-        console.log(e.target.className)
-        return modal.style.display = "block";
-    }   
-    if(etc ==  'close-modal'|| etc == 'modal-sandbox') {
-        return modal.style.display = 'none';
     }
 })
 
-// sign up modal
-(function(){
-    //Show Modal
-   $('#exampleModalLong').on('show.bs.modal', function (e) {
-     console.log('show');
-     $('.firstBlur').addClass('modalBlur');
-   })
-   
-   //Remove modal
-   $('#exampleModalLong').on('hide.bs.modal', function (e) {
-      console.log('hide');
-     $('.firstBlur').removeClass('modalBlur');
-   })
- })();
- 
+document.addEventListener('click', (e) => {
+    let etc = e.target.className;
+    console.log(etc)
+    if(etc == "card-img-top" ) {
+        modal.style.display = 'block';
+        // modal.classList.add("active-modal");
+    }   
+    // if(etc ==  'close-modal'|| etc == 'modal-sandbox') {
+    //     modal.classList.remove('.fade')
+    //     return modal.style.display = 'none';
+    // }
+})
+
+
+$(function(){
+    $menuWrap = $('.menu-wrap');
+    $menuItem = $('.menu').find('.item');
+    
+    itemDeg = 360 / $menuItem.length;
+    $menuItem.each(function(r){
+        $(this).css('transform', 'rotate(' + ( itemDeg / 2 - itemDeg * r ) + 'deg) skew(' + ( - 90 + itemDeg ) + 'deg)');
+        $(this).children('.item-inner').css('transform', 'skew(' + ( 90 - itemDeg ) + 'deg)');
+    });
+});
