@@ -17,10 +17,11 @@
   top: 0;
   left: 0;
   background: transparent;
+  // background-color: linear-gradient(to top,#37213d00, #37213d1f,#180c1bda,#180018)  ;
 }
 
 div.modal {
-  display: none;
+  display: block;
 }
 
 .modal {

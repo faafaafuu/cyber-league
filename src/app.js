@@ -48,15 +48,3 @@ document.addEventListener('click', (e) => {
     //     return modal.style.display = 'none';
     // }
 })
-
-
-$(function(){
-    $menuWrap = $('.menu-wrap');
-    $menuItem = $('.menu').find('.item');
-    
-    itemDeg = 360 / $menuItem.length;
-    $menuItem.each(function(r){
-        $(this).css('transform', 'rotate(' + ( itemDeg / 2 - itemDeg * r ) + 'deg) skew(' + ( - 90 + itemDeg ) + 'deg)');
-        $(this).children('.item-inner').css('transform', 'skew(' + ( 90 - itemDeg ) + 'deg)');
-    });
-});

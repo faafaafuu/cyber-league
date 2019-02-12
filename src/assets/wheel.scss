@@ -304,13 +304,14 @@ transform: rotate(0deg)
 //   }
   
 .choose_box {
-    width: 23%;
-    height: 54%;
+    width: 380px;
+    height: 390px;
     border-radius: 50%;
     position: absolute;
     top: 23%;
-    left: 37.5%;
+    left: 38%;
     overflow: hidden;
+    border: 3px solid white;
 }
 
 .choose_box:before {
@@ -327,8 +328,22 @@ transform: rotate(0deg)
     transform: rotate(45deg);
     opacity: 1;
     border-style: solid;
-    border-width: 1px;
+    border-width: 4px;
     border-color: rgba(255, 255, 255, 0.699);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.76), 0 10px 10px rgba(250, 250, 250, 0.22);
     box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
+}
+
+.t1 {
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    background: yellowgreen;
+}
+
+.t2 {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: gray;
 }

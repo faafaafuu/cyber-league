@@ -3,6 +3,7 @@
     top: 0;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .header_block2 {
@@ -376,4 +377,73 @@
     color: #fff;
     width: 31.5%;
     text-align: center;
+}
+
+.table_block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.table {
+    text-transform: uppercase;
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    color: #fff;
+}
+
+tbody th, td {
+    border-bottom: 1px solid rgba(202, 202, 202, 0.644);
+    padding-bottom: 20px;
+  }
+tr th {
+    width: 23%;
+}
+
+tr td {
+    width: 52%;
+}
+
+thead th {
+    color:#c170ff;
+    font-size: 0.85rem;
+}
+
+  tbody {
+      padding: top
+  }
+  #table-scroll {
+    width: 64%;
+    height: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 2%;
+    overflow: auto;
+  }
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(202, 202, 202, 0.644); 
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px #7843a0; 
+    background:#c170ff;
+} 
+
+.table_gradient {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    background-image: linear-gradient(to top, #180018, #180c1bda, #37213d1f, #37213d00);
 }
