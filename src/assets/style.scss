@@ -79,11 +79,14 @@ body {
     opacity: 0.512; 
 }
 
-.active_page {
-    display: block !important;
-}
+// .active_page {
+//     display: block !important;
+// }
 
 .main_page {
     display: none;
 }
 
+.activator {
+    display: block !important;
+}

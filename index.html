@@ -9,8 +9,8 @@
 	<title>Alfaleads</title>
 </head>
 <body style="visibility: hidden"onload="setTimeout ('document.body.style.visibility = \'visible\'', 0)">
-<div class="main_page active_page">
-	<section class="header">
+<div class="main_page activator">
+	<section class="header main_header">
 			<!-- header -->
 		<div class="header_logo_wrapp">
 			<span class="header_logo">
@@ -47,13 +47,15 @@
 
 			</div>
 			<div class="test">
-
+					<span class="enter"><p class="enter_title">Вход</p></span>
+					<div class="cb">
+							<div class="choose_box"></div>
+							</div>
 					<!-- <img src="./img/wheel.png" alt="" class="ellipse img-fluid"> -->
 			<div class="roulette">
 				<div class="menu-wrap">
 					
-					<span class="enter"><p>Вход</p></span>
-					<div class="choose_box"></div>
+					
 					<ul class="menu box1 animated infinite rotate-full">
 						<li class="item">
 							<a class="item-inner" href="#item1"><img class="rs r1" src="./img/wheelPic/Cs.jpg" alt=""></a>
@@ -115,11 +117,11 @@
 			<img src="./img/L_bg.png" class="block2_bg  img-fluid" alt="">
 			<div class="header header_block2">
 				<div class="navbar">
-					<a class="header_news active_nav">Расписание</a>
-					<a class="table_nav">Cетка</a>
+					<a class="header_news2 schedule_btn">Расписание</a>
+					<a class="table_nav grid_btn active_nav">Cетка</a>
 				</div>
 			</div>
-			<section class="grid" >
+			<section class="grid activator" >
 				<div class="team_grid">
 					<div class="team_grid_wrap">
 					<h2 class="semifinal_header">Полуфинал</h2>
@@ -356,7 +358,7 @@
 	<section class="block3">
 		<img src="./img/bg_stars.png" class="block3_bg img-fluid" alt="">
 			<div class="vk">
-			<p>VK обсудим?</p>
+			<a class="vk_btn" href="https://vk.com/alfaleads">VK обсудим?</a>
 			</div>
 			<div class="video_wrap">
 				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZKFwQFBwQFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -423,6 +425,7 @@
 		</div>
 	</section>
 	<section class="reg_form">
+		<!-- <div class="reg_wrapper"> -->
 		<h1>Регистрация</h1>
 		<div class="reg_container_input">
 			<div>
@@ -501,6 +504,7 @@
 			</div>
 		</div>
 		</div>
+	<!-- </div> -->
 	</section>
 </div>
 <div class="news_page" id="news_page">
@@ -516,7 +520,7 @@
 			<a class="header_logo_title" href="#1">Киберспортивная </br> лига арбитражников</a>
 		</div>
 		<div class="navbar">
-			<a class="header_news" id="#news_page">Новости</a>
+			<a class="header_news3" id="#news_page">Новости</a>
 			<a class="table_nav" href="#grid">Расписание/сетка</a>
 		</div>
 		<div class="streaming_wrap">
@@ -654,6 +658,7 @@ $(function(){
     });
 });
 </script>
+
 <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->

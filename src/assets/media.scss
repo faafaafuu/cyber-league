@@ -44,12 +44,20 @@ and (orientation : portrait) {
     .terms .sign {
           font-size:  1.13em;
         }
+
+    .header_logo_title {
+        margin-left: 15px;
+    }
 }
 
 @media only screen 
 and (max-width : 1224px) {
     .terms {
         height: 40% !important;
+    }
+
+    .header_logo_title {
+        margin-left: 20px;
     }
 }
 // and (min-width : 1224px) 
@@ -74,6 +82,10 @@ and (max-width : 1324px) {
 and (min-width : 1470px) {
     .news_content_wrap {
         width: 54% !important;
+    }
+
+    .header_logo_title {
+        margin-left: 40px;
     }
 }
 
@@ -111,6 +123,10 @@ and (max-width : 1508px) {
 and (max-width : 1228px) {
     .test {
         top: -1%;
+    }
+
+    .header_logo_title {
+        margin-left: 18px;
     }
 }
 

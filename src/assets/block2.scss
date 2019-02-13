@@ -380,7 +380,11 @@
 }
 
 .table_block {
-    display: flex;
+    display: none;
+}
+
+.table_block_active {
+    display: flex !important;
     width: 100%;
     justify-content: center;
 }
@@ -430,13 +434,13 @@ thead th {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(202, 202, 202, 0.644); 
+    // -webkit-box-shadow: inset 0 0 6px rgba(202, 202, 202, 0.644); 
     border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 15px;
-    -webkit-box-shadow: inset 0 0 6px #7843a0; 
+    // -webkit-box-shadow: inset 0 0 6px #7843a0; 
     background:#c170ff;
 } 
 

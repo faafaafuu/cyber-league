@@ -19,7 +19,7 @@ ul,li {
     background-size: 690px;
     width: auto;
     z-index: 899;
-    top: -60px;
+    top: -457px;
     position: relative;
 }
 
@@ -46,7 +46,7 @@ ul.box1 {
 .enter {
 	content: "";
 	position: absolute;
-	top: 50%;
+    top: 48.5%;
 	left: 50%;
 	margin: -45px 0 0 -55px;
 	border-radius: 50%;
@@ -67,6 +67,7 @@ ul.box1 {
     text-align: center;
     text-transform: uppercase;
     padding-top: 31px;
+    cursor: pointer;
 }
 
 .menu .item {
@@ -113,10 +114,6 @@ ul.box1 {
   left: 185px;
 }
 
-
-.rotate-full {
-  animation: infinite-spinning 40s infinite linear;
-}
 /**/
 
 @keyframes infinite-spinning {
@@ -244,30 +241,37 @@ transform: rotate(0deg)
     top: 10%;
     animation: rs 40s infinite linear;
 }
+.rotate-full {
+    animation: infinite-spinning 40s infinite linear;
+}
+
+.rotate-full:hover {
+    animation-play-state: paused !important;
+}
 
 .r1 {
     width: 147%;
 }
 
-.r2 {
+// .r2 {
 
-}
+// }
 
-.r3 {
+// .r3 {
 
-}
+// }
 
-.r4 {
+// .r4 {
 
-}
+// }
 
-.r5 {
+// .r5 {
 
-}
+// }
 
-.r6 {
+// .r6 {
 
-}
+// }
 
 .r7 {
     width: 350px;
@@ -308,17 +312,14 @@ transform: rotate(0deg)
     height: 390px;
     border-radius: 50%;
     position: absolute;
-    top: 23%;
-    left: 38%;
+    top: 0%;
+    left: 2%;
     overflow: hidden;
     border: 3px solid white;
 }
 
 .choose_box:before {
     content: '';
-    background: url('../../img/Ll.png')center no-repeat;
-    background-size: 500px;
-    background-position: 99% 600%;
     width: 300px;
     height: 300px;
     z-index: 4600;
@@ -334,6 +335,31 @@ transform: rotate(0deg)
     box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
 }
 
+.choose_box.r3s:before {
+    background: url('../../img/Ll.png') center no-repeat;
+    background-size: 500px;
+    background-position: 99% 600%;
+}
+
+.choose_box.r1s:before {
+    content: '';
+    background: url('../../img/Maffia.png') center no-repeat;
+    background-size: 500px;
+    background-position: 99% 600%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .t1 {
     width: 100%;
     position: absolute;
@@ -346,4 +372,12 @@ transform: rotate(0deg)
     height: 500px;
     width: 100%;
     background: gray;
+}
+
+.cb {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
 }
