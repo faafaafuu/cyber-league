@@ -3,57 +3,70 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 let conf = {
 
-    entry: './src/app.js', // точка входа в преложение
-    output: { // как и куда мы будем выгружать файлы
+    entry: ['./src/app.js', './src/assets/main.scss'],
+    output: { 
         path: path.resolve(__dirname, './dist'),
 
-        filename: 'main.js',
-        // относительная ссылка на данный файл который будет подстовлятся из браузера
+        filename: 'bundle.js',
         publicPath: 'dist/'
     },
+    devtool: "source-map",
     devServer: {
         overlay: true
     },
 
     module: {
-        // описание правил с каким расширением что мы делаем
-        // по умолчанию нормально работает с js и json
         rules: [
-            {   // скармливаю эти файлы
-
+            { 
                 test: /\.js$/,
                 loader: 'babel-loader',
-                // выдергивать из node_modules
                 //exclude: './node_modules/'
             },
             {
-                test: /\.scss$/,
+                test: /\.(png|jpg|gif)$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader',
+                  {
+                    loader: 'file-loader',
+                    options: {name: 'img/[name].[ext]'}  
+                  }
                 ]
-                // use: ExtractTextPlugin.extract({
-                //     fallback: 'style-loader',
-                //     use: ['css-loader', 'sass-loader']
-                // })
-            },
-            {
-                test: /\.png$/,
-                include : path.join(__dirname, './img'),
-                loader: 'file-loader'
-            },
-            // {
-            //     test    : /\.(png|jpg|svg)$/,
-            //     include : path.join(__dirname, './img'),
-            //     loader  : 'url-loader?limit=30000&name=images/[name].[ext]'
-            // }
+              },
+              {
+                test: /\.(sass|scss)$/,
+                include: path.resolve(__dirname, './src/assets/main.scss'),
+                use: ExtractTextPlugin.extract({
+                  use: [{
+                      loader: "css-loader",
+                      options: {
+                        sourceMap: true,
+                        minimize: true//,
+                        //url: false
+                      }
+                    },
+                    {
+                      loader: "resolve-url-loader"
+                    },
+                    {
+                      loader: "sass-loader",
+                      options: {
+                        sourceMap: true
+                      }
+                    }
+                  ]
+                })
+              }
         ]
     },
     // devtool: 'eval-sourcemap'
     // https://www.npmjs.com/package/extract-text-webpack-plugin
+    // plugins: [
+    //     new ExtractTextPlugin("styles.css"),
+    // ]
     plugins: [
-        new ExtractTextPlugin("styles.css"),
+        new ExtractTextPlugin({
+          filename: './css/style.bundle.css',
+          allChunks: true,
+        }),
     ]
 };
 

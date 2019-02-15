@@ -4,6 +4,9 @@
 
 .bg_discus {
     top: 28px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#180522f6), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(#180522f6, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(#180522f6, rgba(0, 0, 0, 0));
     background: linear-gradient(#180522f6, rgba(0, 0, 0, 0));
     /* background-image: url('./img/bg.png'); */
     opacity: 0.512; 
@@ -15,15 +18,15 @@
 
 .vk {
     border-radius: 5px;
-    background-image: -moz-linear-gradient( 90deg, rgb(170,116,237) 0%, rgb(202,90,234) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(170,116,237) 0%, rgb(202,90,234) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(170,116,237) 0%, rgb(202,90,234) 100%);
-    box-shadow: 0px 0px 137.25px 45.75px rgba(26, 6, 35, 0.41);
+    -webkit-box-shadow: 0px 0px 137.25px 45.75px rgba(26, 6, 35, 0.41);
+            box-shadow: 0px 0px 137.25px 45.75px rgba(26, 6, 35, 0.41);
     left: 40.5%;
     position: absolute;
     width: 19%;
     z-index: 240;
-    top: -2%;
+    top: -1%;
     text-align: center;
     padding: 15px;
 }
@@ -36,9 +39,24 @@
     text-transform: uppercase;
 }
 
+.vk label {
+    margin-left: 28px;
+}
+
+.vk_logo {
+    background: url('../../img/vk_icon.png') center no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    position: absolute;
+    padding-right: 12px;
+    top: 13px;
+}
+
 .video_wrap {
     // background-color: rgb(28, 7, 39);
-    box-shadow: 0px 0px 106.5px 35.5px rgba(198, 87, 255, 0.55);
+    -webkit-box-shadow: 0px 0px 106.5px 35.5px rgba(198, 87, 255, 0.55);
+            box-shadow: 0px 0px 106.5px 35.5px rgba(198, 87, 255, 0.55);
     position: absolute;
     top: 14%;
     left: 19.5%;
@@ -55,15 +73,19 @@
     bottom: 4%;
     left: 20%;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .icons li {
-    background: url('../../img/icons.png') center;
-    padding: 10%;
+    background: url('../../img/icons.png') center no-repeat;
+    padding: 14%;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .icons li:nth-child(1) {
@@ -75,13 +97,11 @@
 }
 
 .copy {
-    font-size: 16px;
-    font-family: "GothamPro";
-    color: rgba(255, 255, 255, 0.749);
-    line-height: 0.316;
-    text-align: left;
+    color: hsla(0,0%,100%,.749);
+    line-height: .316;
     position: absolute;
-    left: 65.5%;
-    bottom: 100px;
+    right: 19%;
+    bottom: 10%;
     z-index: 16;
+
 }

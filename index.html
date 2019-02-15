@@ -5,8 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 	<title>Alfaleads</title>
+	<script>
+		//Структура колеса
+			$(function(){
+				$menuWrap = $('.menu-wrap');
+				$menuItem = $('.menu').find('.item');
+				
+				itemDeg = 360 / $menuItem.length;
+				$menuItem.each(function(r){
+					$(this).css('-webkit-transform', 'rotate(' + ( itemDeg / 2 - itemDeg * r ) + 'deg) skew(' + ( - 90 + itemDeg ) + 'deg)');
+					$(this).children('.item-inner').css('-webkit-transform', 'skew(' + ( 90 - itemDeg ) + 'deg)');
+				});
+			});
+	</script>
+	<link rel="stylesheet" href="dist/css/style.bundle.css">
 </head>
 <body style="visibility: hidden"onload="setTimeout ('document.body.style.visibility = \'visible\'', 0)">
 <div class="main_page activator">
@@ -22,7 +35,7 @@
 		</div>
 		<div class="navbar">
 			<a class="header_news" href="#news_page">Новости</a>
-			<a class="table_nav" href="#grid">Расписание/сетка</a>
+			<a  href="#blodk2_ancor" class="table_nav">Расписание/сетка</a>
 		</div>
 		<div class="streaming_wrap">
 			<p class="streaming">Стрим</p>
@@ -35,56 +48,50 @@
 	<!-- bg -->
 	<section>
 		<div class="bg_dark" id="1"></div>
-		<img src="./img/ll_bg.png" class="ll_bg ll_blur img-fluid" alt="">
-		<img src="./img/bg.png" class="bg bg_blur img-fluid" alt="">
+		<img src="./img/bg/r3s.png" class="ll_bg ll_blur img-fluid" alt="">
+		<img src="./img/bg.jpg" class="bg bg_blur img-fluid" alt="">
 	</section>
 	<!-- bg -->
 	<section class="block1">
 		<div class="block1_logo_wrapper">
 			<img src="./img/main_logo.png" class="kla_logo img-fluid" alt="">
-			<img src="./img/ll_logo.png" class="game_logo img-fluid" alt="">
-			<div class="rol_wel">
+			<img src="./img/logos/r3s_logo.png" class="game_logo img-fluid" alt="">
 
-			</div>
-			<div class="test">
-					<span class="enter"><p class="enter_title">Вход</p></span>
-					<div class="cb">
-							<div class="choose_box"></div>
-							</div>
-					<!-- <img src="./img/wheel.png" alt="" class="ellipse img-fluid"> -->
-			<div class="roulette">
-				<div class="menu-wrap">
-					
-					
-					<ul class="menu box1 animated infinite rotate-full">
+		<!-- wheel -->
+		<div class="wheel_container">
+			<div class="wp_round_pic"></div>
+			<div class="wheel_pic r3s">
+			<span class="enter"><p class="enter_title">Вход</p></span>
+			<ul class="menu box1 animated infinite rotate-full">
 						<li class="item">
-							<a class="item-inner" href="#item1"><img class="rs r1" src="./img/wheelPic/Cs.jpg" alt=""></a>
+							<a class="item-inner" href="#item1"><img class="rs r1" src="./img/wheelPic/Cs.jpg" alt=""><span class="bgc r1_p"></span></img></a>
 						</li>
 						<li class="item">
-							<a class="item-inner" href="#item2"><img class="rs r2" src="./img/wheelPic/Dota.png" alt=""></a>
+							<a class="item-inner" href="#item2"><img class="rs r2" src="./img/wheelPic/Dota.jpg" alt=""><span class="bgc r2_p"></span></img></a>
 						</li>
 						<li class="item">
-							<a class="item-inner" href="#item3"><img class="rs r3" src="./img/wheelPic/Ll.jpg" alt=""></a>
+							<a class="item-inner" href="#item3"><img class="rs r3" src="./img/wheelPic/Ll.jpg" alt=""><span class="bgc r3_p"></span></img></a>
 						</li>
 						<li class="item">
-							<a class="item-inner" href="#item4"><img class="rs r4" src="./img/wheelPic/Pubg.jpg" alt=""></a>
+							<a class="item-inner" href="#item4"><img class="rs r4" src="./img/wheelPic/Pubg.jpg" alt=""><span class="bgc r4_p"></span></img></a>
 						</li>
 						<li class="item">
-							<a class="item-inner" href="#item5"><img class="rs r5" src="./img/wheelPic/Maffia.jpg" alt=""></a>
+							<a class="item-inner" href="#item5"><img class="rs r5" src="./img/wheelPic/Maffia.jpg" alt=""><span class="bgc r5_p"></span></img></a>
 						</li>
 						<li class="item">
-							<a class="item-inner" href="#item6"><img class="rs r6" src="./img/wheelPic/Warcraft.jpg" alt=""></a>
+							<a class="item-inner" href="#item6"><img class="rs r6" src="./img/wheelPic/Warcraft.jpg" alt=""><span class="bgc r6_p"></span></img></a>
 						</li>
 						<li class="item">
-							<a class="item-inner" href="#item7"><img class="rs r7" src="./img/wheelPic/Overwatch.jpg" alt=""></a>
+							<a class="item-inner" href="#item7"><img class="rs r7" src="./img/wheelPic/Overwatch.jpg" alt=""><span class="bgc r7_p"></span></img></a>
 						</li>
-					</ul>
-				</div>     
+			</ul> 
 			</div>	
-			</div>
+		</div>
+		<!-- wheel -->
+
 			<!-- </img> -->
 			<div class="peoples">
-					<img src="./img/masha1.png" alt="" class="masha img-fluid">
+					<img src="./img/masha.png" alt="" class="masha img-fluid">
 					<div class="info info_m">
 					<h3 class="head_name">Мария Палехова</h3>
 					<p class="description" >Key Account Manager</br>Overwatch - 3 года</p>
@@ -112,9 +119,20 @@
 		</div>
 		
 	</section>
-	<section class="block2" id="grid">
-		<div class="block2_bg_dark">
-			<img src="./img/L_bg.png" class="block2_bg  img-fluid" alt="">
+	<section>
+			<!-- arrow -->
+	<a href="#1">
+	<div class="arrow">
+			<div class="arrow-top"></div>
+			<div class="arrow-bottom"></div>
+	</div>
+	</a>
+	<!-- arrow -->
+	<section class="block2" name="blodk2_ancor" id="blodk2_ancor">
+
+		<a name="2" id="2"></a>
+		<div class="block2_bg_dark" >
+			<img src="./img/L_bg.jpg" class="block2_bg  img-fluid" alt="">
 			<div class="header header_block2">
 				<div class="navbar">
 					<a class="header_news2 schedule_btn">Расписание</a>
@@ -124,6 +142,13 @@
 			<section class="grid activator" >
 				<div class="team_grid">
 					<div class="team_grid_wrap">
+					<div class="lines_figure">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+						<span class="line4"></span>
+						<span class="line5"></span>
+					</div>
 					<h2 class="semifinal_header">Полуфинал</h2>
 					<div class="semifinal_wrap_A">
 						<p></p>
@@ -356,9 +381,10 @@
 		</div>
 	</section>
 	<section class="block3">
-		<img src="./img/bg_stars.png" class="block3_bg img-fluid" alt="">
+		<img src="./img/bg_stars.jpg" class="block3_bg img-fluid" alt="">
 			<div class="vk">
-			<a class="vk_btn" href="https://vk.com/alfaleads">VK обсудим?</a>
+
+			<a class="vk_btn" href="https://vk.com/alfaleads"> <span class="vk_logo"></span><label>обсудим?</label> </a>
 			</div>
 			<div class="video_wrap">
 				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZKFwQFBwQFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -380,6 +406,7 @@
 			<!-- <section class="footer">
 					<div class="header"></div>
 				</section> -->
+	</section>
 	</section>
 	<section class="sign_up_form">
 		<form class="sign_up">
@@ -427,6 +454,7 @@
 	<section class="reg_form">
 		<!-- <div class="reg_wrapper"> -->
 		<h1>Регистрация</h1>
+		<div class="reg_wrapper">
 		<div class="reg_container_input">
 			<div>
 			<label for="">Имя</label>
@@ -451,58 +479,59 @@
 			<button type="submit" class="main-reg-btn btn-primary">Отправить заявку</button>
 		</div>
 		<div class="reg_container_checkbox">
-			<div class="who_r_u">
-				<h2>Кто ты?</h2>
-			<label for="" class="checkbox_name">Арбитражник
-			<input type="radio" name="" value="арбитражник" checked></input>
-			<span class="checkmark"></span>
-			</label>
-			<label for="" class="checkbox_name">SMM
-			<input type="radio" name="" value="smm"></input>
-			<span class="checkmark"></span>
-			</label>
-			<label for="" class="checkbox_name">Веб-мастер
-			<input type="radio" name="" value="веб-мастер"></input>
-			<span class="checkmark"></span>
-			</label>
-			<label for="" class="checkbox_name">Другое
-			<input type="radio" name="" value="другое"></input>
-			<span class="checkmark"></span>
-			</label>
-			<label for="" class="checkbox_name">
-			<input type="" class="reg-form-control" id="" placeholder=""></input>
-			</label>
+				<div class="who_r_u">
+					<h2>Кто ты?</h2>
+				<label for="" class="checkbox_name">Арбитражник
+				<input type="radio" name="" value="арбитражник" checked></input>
+				<span class="checkmark"></span>
+				</label>
+				<label for="" class="checkbox_name">SMM
+				<input type="radio" name="" value="smm"></input>
+				<span class="checkmark"></span>
+				</label>
+				<label for="" class="checkbox_name">Веб-мастер
+				<input type="radio" name="" value="веб-мастер"></input>
+				<span class="checkmark"></span>
+				</label>
+				<label for="" class="checkbox_name">Другое
+				<input type="radio" name="" value="другое"></input>
+				<span class="checkmark"></span>
+				</label>
+				<label for="" class="checkbox_name">
+				<input type="" class="reg-form-control" id="" placeholder=""></input>
+				</label>
+				</div>
+				<div class="whats_ur_game">
+					<h2>Во что играешь</h2>
+					<div>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value=" League of Legends" checked>League of Legends
+				</label>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value="Dota">Dota
+				</label>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value="Counter-Strike">Counter-Strike
+				</label>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value="PUBG">PUBG
+				</label>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value="Mafia">Mafia
+				</label>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value="Warcraft">Warcraft
+				</label>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value="Overwatch">Overwatch
+				</label>
+				<label for="" class="checkbox_name">
+					<input type="radio" name="" value="Другое">Другое
+				</label>
+				<input type="" class="reg-form-control" id="" placeholder="">
+				</div>
 			</div>
-			<div class="whats_ur_game">
-				<h2>Во что играешь</h2>
-				<div>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value=" League of Legends" checked>League of Legends
-			</label>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value="Dota">Dota
-			</label>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value="Counter-Strike">Counter-Strike
-			</label>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value="PUBG">PUBG
-			</label>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value="Mafia">Mafia
-			</label>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value="Warcraft">Warcraft
-			</label>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value="Overwatch">Overwatch
-			</label>
-			<label for="" class="checkbox_name">
-				<input type="radio" name="" value="Другое">Другое
-			</label>
-			<input type="" class="reg-form-control" id="" placeholder="">
 			</div>
-		</div>
 		</div>
 	<!-- </div> -->
 	</section>
@@ -533,70 +562,70 @@
 	</section>
 	<!-- bg -->
 	<section>
-		<img src="./img/news_bg.png" class="news_bg img-fluid" alt="">
+		<img src="./img/news_bg.jpg" class="news_bg img-fluid" alt="">
 	</section>
 	<!-- bg -->
 	<section class="news_content">
 		<div class="news_content_wrap">
 			<h1>Новости</h1>
 			<div class="card">
-				<img src="./img/blog pics/pn1.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn1.jpg" class="card-img-top" alt="...">
 				<div class="card-body">	
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div> 
 			<div class="card" style="height:430px">
-				<img src="./img/blog pics/pn2.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn2.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div>
 			<div class="card">
-				<img src="./img/blog pics/pn3.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn3.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div>
 			<div class="card" style="margin-top: -5%">
-				<img src="./img/blog pics/pn4.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn4.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div>
 			<div class="card" style="height: 430px">
-				<img src="./img/blog pics/pn5.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn5.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div>
 			<div class="card" style="margin-top: -5%">
-				<img src="./img/blog pics/pn6.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn6.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div>
 			<div class="card" style="margin-top: -12%">
-				<img src="./img/blog pics/pn7.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn7.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div>
 			<div class="card" style="height: 430px">
-				<img src="./img/blog pics/pn8.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn8.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
 				</div>
 			</div>
 			<div class="card" style="margin-top: -12%">
-				<img src="./img/blog pics/pn9.png" class="card-img-top" alt="...">
+				<img src="./img/blogPics/pn9.jpg" class="card-img-top" alt="...">
 				<div class="card-body">
 					<p class="card-date">21.01.2019</p>
 					<p class="card-text">Победа Team D </br> в League of legends</p>
@@ -645,24 +674,6 @@
 </div>
 </div>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="preload" href="dist/style.css">
-<script>
-$(function(){
-    $menuWrap = $('.menu-wrap');
-    $menuItem = $('.menu').find('.item');
-    
-    itemDeg = 360 / $menuItem.length;
-    $menuItem.each(function(r){
-        $(this).css('transform', 'rotate(' + ( itemDeg / 2 - itemDeg * r ) + 'deg) skew(' + ( - 90 + itemDeg ) + 'deg)');
-        $(this).children('.item-inner').css('transform', 'skew(' + ( 90 - itemDeg ) + 'deg)');
-    });
-});
-</script>
-
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
-
-<script src="dist/main.js"></script>
+<script src="dist/bundle.js"></script>
 </body>
 </html>

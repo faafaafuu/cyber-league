@@ -1,11 +1,4 @@
-.test {
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    z-index: 50000;
-    top: 250px;
-    opacity: .9;
-}
+
 
 ul,li {
 	display: block;
@@ -13,61 +6,19 @@ ul,li {
 	padding: 0;
 }
 
-.menu-wrap {
-    height: 700px;
-    background: url('../../img/wheel.png') center no-repeat;
-    background-size: 690px;
-    width: auto;
-    z-index: 899;
-    top: -457px;
-    position: relative;
-}
-
-ul.box1 {
-    width: 25rem;
-    height: 25rem;
-    margin: 0 auto;
-    border-radius: 100%;
-    position: relative;
-    transform: rotate(0deg);
-    top: 23.5%;
-    left: -14px;
-}
-
 .menu {
-    z-index: 4000;
+    z-index: 4;
 	display: block;
 	overflow: hidden;
 	border-radius: 200px;
-	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	    -ms-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	-o-transition: transform .2s;
 	transition: transform .2s;
-}
-// .menu:before
-.enter {
-	content: "";
-	position: absolute;
-    top: 48.5%;
-	left: 50%;
-	margin: -45px 0 0 -55px;
-	border-radius: 50%;
-    box-sizing: border-box;
-    
-    background-color: rgb(236, 27, 51);
-    position: absolute;
-    width: 90px;
-    height: 90px;
-
-    border-width: 2px;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    box-shadow: 10px 0px 36.12px 6.88px rgba(154, 79, 214, 0.89);
-    position: absolute;
-    z-index: 4970;
-
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 31px;
-    cursor: pointer;
+	transition: transform .2s, -webkit-transform .2s;
 }
 
 .menu .item {
@@ -76,9 +27,12 @@ ul.box1 {
 	height: 200px;
 	bottom: 50%;
 	left: 50%;
-	transform-origin: 0% 100%;
+	-webkit-transform-origin: 0% 100%;
+	    -ms-transform-origin: 0% 100%;
+	        transform-origin: 0% 100%;
 	overflow: hidden;
 }
+
 .menu .item-inner {
 	position: absolute;
 	bottom: 0;
@@ -86,8 +40,11 @@ ul.box1 {
 	width: 200px;
 	height: 200px;
 	background-color: #666;
-	transform-origin: 0% 100%;
-	border: 3px solid #333;
+	-webkit-transform-origin: 0% 100%;
+	    -ms-transform-origin: 0% 100%;
+	        transform-origin: 0% 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-decoration: none;
 	font-size: 18px;
@@ -96,182 +53,81 @@ ul.box1 {
 }
 
 .animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .animated .infinite {
-  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-.box1 {
-  width: 25rem;
-  height: 25rem;
-  margin: 5rem auto;
-  border-radius: 100%;
-  transform: rotate(0deg);
-  top: 0px;
-  left: 185px;
+@-webkit-keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
-
-/**/
 
 @keyframes infinite-spinning {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
+}
+
+@-webkit-keyframes rs {
+    0%{
+    	-webkit-transform: rotate(360deg);
+    	        transform: rotate(360deg)}
+    100%{
+-webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
 }
 
 @keyframes rs {
     0%{
-    	transform: rotate(360deg)}
+    	-webkit-transform: rotate(360deg);
+    	        transform: rotate(360deg)}
     100%{
-transform: rotate(0deg)
+-webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
     }
 }
-/*
-@keyframes r2 {
-    0%{
-        transform: rotate(360deg)}
-    10%{}
-    20%{}
-    30%{}
-    40%{}
-    50%{}
-    60%{}
-    70%{}
-    80%{}
-    90%{}
-    100%{
 
-    }
-}
-@keyframes r3 {
-    0%{
-        transform: rotate(360deg)}
-    10%{}
-    20%{}
-    30%{}
-    40%{}
-    50%{}
-    60%{}
-    70%{}
-    80%{}
-    90%{}
-    100%{
-
-    }
-}
-@keyframes r4 {
-    0%{
-        transform: rotate(360deg)}
-    10%{}
-    20%{}
-    30%{}
-    40%{}
-    50%{}
-    60%{}
-    70%{}
-    80%{}
-    90%{}
-    100%{
-
-    }
-}
-@keyframes r5 {
-    0%{
-        transform: rotate(360deg)}
-    10%{}
-    20%{}
-    30%{}
-    40%{}
-    50%{}
-    60%{}
-    70%{}
-    80%{}
-    90%{}
-    100%{
-
-    }
-}
-@keyframes r6 {
-    0%{
-        transform: rotate(360deg)}
-    10%{}
-    20%{}
-    30%{}
-    40%{}
-    50%{}
-    60%{}
-    70%{}
-    80%{}
-    90%{}
-    100%{
-
-    }
-}
-@keyframes r7 {
-    0%{
-        transform: rotate(360deg)}
-    10%{}
-    20%{}
-    30%{}
-    40%{}
-    50%{}
-    60%{}
-    70%{}
-    80%{}
-    90%{}
-    100%{
-
-    }
-}
-*/
 .rs {
     width: 100%;
-    position: fixed;
     z-index: 1000;
     width: 182%;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
-    left: -26%;
-    top: 10%;
-    animation: rs 40s infinite linear;
+    left: -41%;
+    top: 24%;
+    -webkit-animation: rs 40s infinite linear;
+            animation: rs 40s infinite linear;
 }
 .rotate-full {
-    animation: infinite-spinning 40s infinite linear;
+    -webkit-animation: infinite-spinning 40s infinite linear;
+            animation: infinite-spinning 40s infinite linear;
 }
 
-.rotate-full:hover {
-    animation-play-state: paused !important;
-}
-
-.r1 {
-    width: 147%;
-}
-
-// .r2 {
-
+// .rotate-full:hover {
+//     -webkit-animation-play-state: paused !important;
+//             animation-play-state: paused !important;
 // }
 
-// .r3 {
 
-// }
-
-// .r4 {
-
-// }
-
-// .r5 {
-
-// }
-
-// .r6 {
-
-// }
 
 .r7 {
     width: 350px;
@@ -279,7 +135,7 @@ transform: rotate(0deg)
     left: -100px;
 }
 
-.r7:before {
+.r7:after {
     content: '';
     position: absolute;
     top: 0;
@@ -293,91 +149,190 @@ transform: rotate(0deg)
     left: -100px;
   } 
 
-// .choose_box {
-//     border-style: solid;
-//     border-width: 4px;
-//     border-color: rgb(255, 255, 255);
-//     background-color: rgb(255, 247, 148);
-//     box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
-//     position: absolute;
-//     left: 1089px;
-//     top: 285px;
-//     width: 258px;
-//     height: 446px;
-//     z-index: 961;
-//   }
-  
-.choose_box {
-    width: 380px;
-    height: 390px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0%;
-    left: 2%;
-    overflow: hidden;
-    border: 3px solid white;
+.wheel_pic.r3s:after {
+    background: url('../../img/wheelPic/choose_box/Ll.jpg') center no-repeat;
+    background-size: 500px;
+    background-position: 99% 600%;
 }
 
-.choose_box:before {
+.wheel_pic.r1s:after {
+    background: url('../../img/wheelPic/choose_box/cs.jpg') center no-repeat;
+    background-size: 494px;
+    background-position: 126% 669%;
+}
+
+.wheel_pic.r2s:after {
+    background: url('../../img/wheelPic/choose_box/Dota.jpg') center no-repeat;
+    background-size: 495px;
+    background-position: 73% 669%;
+}
+
+.wheel_pic.r4s:after {
+    background: url('../../img/wheelPic/choose_box/Pubg.jpg') center no-repeat;
+    background-size: cover;
+    background-position: 97% 23px;
+}
+
+.wheel_pic.r5s:after {
+    background: url('../../img/wheelPic/choose_box/Maffia.jpg') center no-repeat;
+    background-size: 537px;
+    background-position: 126% 669%;
+}
+
+.wheel_pic.r6s:after {
+    background: url('../../img/wheelPic/choose_box/Warcraft.jpg') center no-repeat;
+    background-size: cover;
+    background-position: 27% 61px;
+}
+
+.wheel_pic.r7s:after {
+    background: url('../../img/wheelPic/choose_box/Overwatch.jpg') center no-repeat;
+    background-size: cover;
+    background-position: -68px 16px;
+}
+
+
+//////////////////////////////////////////////////////
+.wheel_container {
+    width: 100%;
+    height: 10px;
+    top: 24%;
+    position: absolute;
+}
+
+.enter {
+    content: "";
+    top: 48%;
+    left: 52%;
+    margin: -45px 0 0 -55px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ec1b33;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #f1f1f1c9;
+    -webkit-box-shadow: 0px 0px 70px 15px rgba(255,110,255,1);
+    -moz-box-shadow: 0px 0px 70px 15px rgba(255,110,255,1);
+    box-shadow: 0px 0px 70px 15px rgba(255,110,255,1);
+    position: absolute;
+    z-index: 4970;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 31px;
+    cursor: pointer;
+}
+
+
+  
+
+.enter_title {
+    margin-top: 5px;
+    margin-left: -1px;
+}
+
+.wp_round_pic {
+    height: 710px;
+    background: url('../../img/wheel.png') 50% no-repeat;
+    background-size: 710px;
+    width: auto;
+    z-index: 1;
+    position: relative;
+}
+
+
+.wheel_pic:after {
     content: '';
+    background-size: 500px;
+    background-position: 99% 600%;
+    background-color: rgb(213, 206, 98);
+    z-index: 10;
     width: 300px;
     height: 300px;
-    z-index: 4600;
     position: absolute;
-    left: 62%;
     top: 10%;
-    transform: rotate(45deg);
+    left: 60%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     opacity: 1;
     border-style: solid;
     border-width: 4px;
     border-color: rgba(255, 255, 255, 0.699);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.76), 0 10px 10px rgba(250, 250, 250, 0.22);
-    box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.76), 0 10px 10px rgba(250, 250, 250, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.76), 0 10px 10px rgba(250, 250, 250, 0.22);
+    -webkit-box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
+            box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
+            
 }
 
-.choose_box.r3s:before {
-    background: url('../../img/Ll.png') center no-repeat;
-    background-size: 500px;
-    background-position: 99% 600%;
-}
-
-.choose_box.r1s:before {
-    content: '';
-    background: url('../../img/Maffia.png') center no-repeat;
-    background-size: 500px;
-    background-position: 99% 600%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.t1 {
-    width: 100%;
-    position: absolute;
-    height: 500px;
-    background: yellowgreen;
-}
-
-.t2 {
+.box1 {
+    width: 25rem;
+      height: 25rem;
+      margin: 0 auto;
+      border-radius: 100%;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+.wheel_pic {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    left: -15px;
+    top: -544px;
     position: relative;
-    height: 500px;
-    width: 100%;
-    background: gray;
-}
-
-.cb {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    top: 100px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 2;
     margin: 0 auto;
+    
 }
+
+.r1_p {
+    background-color: #99cccc78;
+} 
+
+.r2_p {
+    background-color: #99663383;
+} 
+
+.r3_p {
+    background-color: #6699cc85;
+} 
+
+
+.r4_p {
+    background-color: #cc993380;
+} 
+
+.r5_p {
+    background-color: #99336681;
+} 
+
+.r6_p {
+    background-color: #33993383;
+} 
+
+.r7_p {
+    background-color: #6699cc78;
+} 
+
+// .bgc {
+//     width: 100%;
+//     height: 100%;
+//     background-blend-mode: multiply;
+//     z-index: 1001;
+// }
+
+// .bgc:hover {
+//     background-color: '';
+//     width: 0;
+//     height: 0;
+//     z-index: -101;
+// }
+
+// .bgc_dis {
+//     z-index: -100;
+// }

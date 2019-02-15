@@ -39,9 +39,12 @@
   width: 80%;
   max-width: 920px;
   margin: 100px auto;
-  animation-name: modalbox;
-  animation-duration: .4s;
-  animation-timing-function: cubic-bezier(0,0,.3,1.6);
+  -webkit-animation-name: modalbox;
+          animation-name: modalbox;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-timing-function: cubic-bezier(0,0,.3,1.6);
+          animation-timing-function: cubic-bezier(0,0,.3,1.6);
 }
 
 .modal-header {
@@ -132,8 +135,9 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -webkit-transition: ease .2s;
+  -o-transition: ease .2s;
   transition: ease .2s;
 }
 
@@ -151,13 +155,16 @@ button {
   position: absolute;
     // width: 200%;
     // left: -50%;
-    transform: rotate(180deg);
+    width: 100%;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     top: -120px;
     height: 700px;
 }
 
 .news-modal-pic {
-  background: url('../../img/blog pics/pn3.png') center no-repeat;
+  background: url('../../img/blogPics/pn3.jpg') center no-repeat;
     width: 100%;
     top: -74px;
     left: 0;
@@ -169,4 +176,3 @@ button {
 .modal-title {
   font-size: 24px;
 }
-

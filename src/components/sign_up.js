@@ -3,7 +3,7 @@ const sign_up = document.querySelector('.sign_up_form');
 const reg_form = document.querySelector('.reg_form');
 
 
-const blur = document.querySelectorAll('.ll_blur, .bg_blur, .masha, .roma, .kla_logo, .game_logo, .test');
+const blur = document.querySelectorAll('.ll_blur, .bg_blur, .masha, .roma, .kla_logo, .game_logo, .wheel_pic, .wheel_container');
 
     document.addEventListener('click', (e) => {
         if (e.target.className == 'enter' || e.target.className == 'enter_title') {

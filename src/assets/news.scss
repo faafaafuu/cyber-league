@@ -47,9 +47,14 @@ section .nb-footer {
     margin: 0 auto;
     position: relative;
     z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: flex;
 }
 
@@ -81,7 +86,6 @@ div.card {
 
 .card-body {
     top: -1%;
-    background-image: -moz-linear-gradient( 90deg, rgb(159,116,237) 0%, rgb(207,90,234) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(159,116,237) 0%, rgb(207,90,234) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(159,116,237) 0%, rgb(207,90,234) 100%);
     width: 100%;
@@ -129,12 +133,16 @@ p {
     bottom: 4%;
     left: 20%;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .nb-icons li {
-    background: url('../../img/icons.png') center;
+    background-image: url('../../img/icons.png') center;
     padding: 18px;
     height: 0px;
     bottom: -140px;
@@ -149,6 +157,5 @@ p {
 .nb-icons li:nth-child(3) {
     background-position: right;
 }
-
 
 

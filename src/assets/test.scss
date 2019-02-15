@@ -1,0 +1,288 @@
+
+
+ul,li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.menu {
+    z-index: 4;
+	display: block;
+	overflow: hidden;
+	border-radius: 200px;
+	-webkit-transform-origin: 50% 50%;
+	    -ms-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	-o-transition: transform .2s;
+	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s;
+}
+
+.menu .item {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	bottom: 50%;
+	left: 50%;
+	-webkit-transform-origin: 0% 100%;
+	    -ms-transform-origin: 0% 100%;
+	        transform-origin: 0% 100%;
+	overflow: hidden;
+}
+
+.menu .item-inner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background-color: #666;
+	-webkit-transform-origin: 0% 100%;
+	    -ms-transform-origin: 0% 100%;
+	        transform-origin: 0% 100%;
+	border: 3px solid #333;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 0;
+	color: #ccc;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated .infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes infinite-spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rs {
+    0%{
+    	-webkit-transform: rotate(360deg);
+    	        transform: rotate(360deg)}
+    100%{
+-webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes rs {
+    0%{
+    	-webkit-transform: rotate(360deg);
+    	        transform: rotate(360deg)}
+    100%{
+-webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+.rs {
+    width: 100%;
+    z-index: 1000;
+    width: 182%;
+    position: absolute;
+    z-index: 1000;
+    left: -26%;
+    top: 10%;
+    -webkit-animation: rs 40s infinite linear;
+            animation: rs 40s infinite linear;
+}
+.rotate-full {
+    -webkit-animation: infinite-spinning 40s infinite linear;
+            animation: infinite-spinning 40s infinite linear;
+}
+
+.rotate-full:hover {
+    -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+}
+
+.r1 {
+    width: 147%;
+}
+
+.r7 {
+    width: 350px;
+    margin-bottom: -100px;
+    left: -100px;
+}
+
+.r7:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #246868;
+    background: #112f2f;
+    width: 350px;
+    margin-bottom: -100px;
+    left: -100px;
+  } 
+
+.wheel_pic.r3s:before {
+    background: url('../../img/wheelPic/Ll.jpg') center no-repeat;
+    background-size: 500px;
+    background-position: 99% 600%;
+}
+
+.wheel_pic.r1s:before {
+    background: url('../../img/wheelPic/cs.jpg') center no-repeat;
+    background-size: 494px;
+    background-position: 126% 669%;
+}
+
+.wheel_pic.r2s:before {
+    background: url('../../img/wheelPic/Dota.jpg') center no-repeat;
+    background-size: 495px;
+    background-position: 73% 669%;
+}
+
+.wheel_pic.r4s:before {
+    background: url('../../img/wheelPic/Pubg.jpg') center no-repeat;
+    background-size: 978px;
+    background-position: 97% 669%;
+}
+
+.wheel_pic.r5s:before {
+    background: url('../../img/wheelPic/Maffia.jpg') center no-repeat;
+    background-size: 537px;
+    background-position: 126% 669%;
+}
+
+.wheel_pic.r6s:before {
+    background: url('../../img/wheelPic/Warcraft.jpg') center no-repeat;
+    background-size: 445px;
+    background-position: 126% 669%;
+}
+
+.wheel_pic.r7s:after {
+    background: url('../../img/wheelPic/Overwatch.jpg') center no-repeat;
+    background-size: 562px;
+    background-position: -91px 58px;
+}
+
+
+//////////////////////////////////////////////////////
+.enter {
+    content: "";
+    top: 15%;
+    left: 50%;
+    margin: -45px 0 0 -55px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ec1b33;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 10px 0 36.12px 6.88px rgba(154,79,214,.89);
+    box-shadow: 10px 0 36.12px 6.88px rgba(154,79,214,.89);
+    position: absolute;
+    z-index: 4970;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 31px;
+    cursor: pointer;
+}
+
+.enter_title {
+    margin-top: 5px;
+    margin-left: -1px;
+}
+
+.wp_round_pic {
+    height: 710px;
+    background: url('../../img/wheel.png') 50% no-repeat;
+    background-size: 710px;
+    width: auto;
+    z-index: 2;
+    top: 0;
+    position: relative;
+}
+
+
+.wheel_pic:after {
+    content: '';
+    background: url('../../img/wheelPic/Ll.jpg') center no-repeat;
+    background-size: 500px;
+    background-position: 99% 600%;
+    z-index: 10;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    opacity: 1;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(255, 255, 255, 0.699);
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.76), 0 10px 10px rgba(250, 250, 250, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.76), 0 10px 10px rgba(250, 250, 250, 0.22);
+    -webkit-box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
+            box-shadow: 0px 11px 14.94px 3.06px rgba(0, 0, 0, 0.86),inset 0px 0px 38.27px 4.73px rgba(0, 0, 0, 0.46);
+            
+}
+
+.box1 {
+    width: 25rem;
+      height: 25rem;
+      margin: 0 auto;
+      border-radius: 100%;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+.wheel_pic {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    left: -15px;
+    top: -544px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 2;
+    margin: 0 auto;
+    
+}
+
+
+    
+    

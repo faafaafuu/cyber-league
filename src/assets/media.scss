@@ -41,17 +41,44 @@ and (orientation : portrait) {
 }
 
 @media only screen and (max-width: 1080px) {
-    .terms .sign {
-          font-size:  1.13em;
-        }
+    .description {
+        font-size: 9px !important;
+    }
+
+    .game_logo {
+        margin-left: 47.6%;
+    }
+
+    .head_name {
+        font-size: 10px !important;
+    }
 
     .header_logo_title {
-        margin-left: 15px;
+        margin-left: 15px !important;
     }
+
+    .sign {
+        font-size: 19px !important;
+        top: -6px !important;
+        left: 35.5% !important;
+    }
+
+    .term_description {
+        font-size: 11px !important;
+    }
+
+    .wheel_container {
+        top: -16% !important;
+    }
+
 }
 
 @media only screen 
 and (max-width : 1224px) {
+    .wheel_container {
+        top: -17% !important;
+    }
+
     .terms {
         height: 40% !important;
     }
@@ -59,43 +86,69 @@ and (max-width : 1224px) {
     .header_logo_title {
         margin-left: 20px;
     }
+
+    .team_grid h2 {
+        top: 25px !important;
+    }
+
+    h2.final_header {
+        top: 90px !important;
+    }
 }
 // and (min-width : 1224px) 
 /* Styles */
 
 @media only screen 
+and (min-width : 1224px) {
+    .wheel_container {
+        top: -17% !important;
+    }
+}
+
+@media only screen 
 and (max-width : 1324px) {
+    .wheel_container {
+        top: -8%;
+    }
+
     .news_content_wrap {
         width: 54%;
         top: 200px;
         position: relative;
         z-index: 100;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         display: flex;
         margin: 0 auto;
     }
-}
-
-@media only screen 
-and (min-width : 1470px) {
-    .news_content_wrap {
-        width: 54% !important;
-    }
-
-    .header_logo_title {
-        margin-left: 40px;
-    }
-}
-
-@media only screen 
-and (max-width : 1324px) {
     div.card {
         height: 23rem !important;
         margin-top: 3% !important;
     }
 }
+
+@media only screen 
+and (min-width : 1324px) {
+    .wheel_container {
+        top: 0% !important;
+    }
+
+    .news_content_wrap {
+        width: 54%;
+    }
+
+    .header_logo_title {
+        margin-left: 40px;
+    }
+
+}
+
 
 
 @media only screen 
@@ -108,7 +161,11 @@ and (max-width : 1298px) {
 @media only screen 
 and (min-width : 1508px) {
     .test {
-        top: 26%;
+        top: 26% !important;
+    }
+    .sign {
+          top: -9px !important;
+          left: 36.2% !important;
     }
 }
 
@@ -116,6 +173,10 @@ and (min-width : 1508px) {
 and (max-width : 1508px) {
     .test {
         top: 12%;
+    }
+    
+    .term_description {
+        font-size: 1vw;
     }
 }
 
@@ -143,14 +204,42 @@ and (max-width: 1145px) {
     }
 }
 
+@media only screen 
+and (min-width : 1600px) {
+/* Styles */
+    .wheel_container {
+        top: 10% !important;
+    }
+}
 
+@media only screen 
+and (min-width: 1640px) {
 
+    .news_content_wrap {
+        width: 48% !important;
+    }
+}
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
 /* Styles */
+.icons li {
+    padding: 13% !important;
 }
+    .wheel_container {
+        top: 24% !important;
+    }
 
+    .sign {
+        top: -15px !important;
+        left: 37.2% !important;
+        font-size: 30px !important;
+  }
+
+  .news_content_wrap {
+    width: 46%!important;
+  }
+}
 /* iPhone 4 ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
